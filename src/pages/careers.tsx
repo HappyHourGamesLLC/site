@@ -390,101 +390,108 @@ const Careers: FC = () => {
       </div>
     </section>
 
-      {/* Application Process */}
-      <section className="py-16 bg-gray-900">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4">Our Application <span className="text-purple-400">Process</span></h2>
-            <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-              We've designed a streamlined, transparent hiring process to help you showcase your talents 
-              while getting to know our team and culture.
-            </p>
-          </div>
-          
-          <div className="max-w-4xl mx-auto">
-            <div className="relative">
-              <div className="absolute left-0 md:left-1/2 h-full w-0.5 bg-purple-800 transform md:-translate-x-0.5"></div>
+    {/* Application Process Section with Improved Responsiveness */}
+    <section className="py-16 bg-gray-900">
+      <div className="container mx-auto px-6">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold mb-4">Our Application <span className="text-purple-400">Process</span></h2>
+          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+            We've designed a streamlined, transparent hiring process to help you showcase your talents 
+            while getting to know our team and culture.
+          </p>
+        </div>
+        
+        <div className="max-w-4xl mx-auto">
+          <div className="relative">
+            {/* Timeline Line - Responsive visibility and positioning */}
+            <div className="absolute md:left-1/2 left-4 h-full w-0.5 bg-purple-800 md:transform md:-translate-x-0.5"></div>
+            
+            <div className="space-y-12">
+              {/* Step 1 */}
+              <div className="relative flex flex-col md:flex-row items-start">
+                <div className="flex-1 md:text-right md:pr-12 pl-16 md:pl-0">
+                  <h3 className="text-xl font-bold mb-2">Application Review</h3>
+                  <p className="text-gray-300">
+                    Our team carefully reviews your application, resume, and portfolio to evaluate your skills and experience.
+                    We aim to respond to all applications within one week.
+                  </p>
+                </div>
+                {/* Circle indicator - Responsive positioning */}
+                <div className="absolute left-4 top-0 md:left-1/2 md:top-0 w-8 h-8 bg-purple-600 rounded-full border-4 border-gray-900 transform md:-translate-x-1/2 flex items-center justify-center">
+                  1
+                </div>
+                <div className="flex-1 md:pl-12 hidden md:block"></div>
+              </div>
               
-              <div className="space-y-12">
-                {/* Step 1 */}
-                <div className="relative flex flex-col md:flex-row items-start">
-                  <div className="flex-1 md:text-right md:pr-12 pb-8 md:pb-0">
-                    <h3 className="text-xl font-bold mb-2">Application Review</h3>
-                    <p className="text-gray-300">
-                      Our team carefully reviews your application, resume, and portfolio to evaluate your skills and experience.
-                      We aim to respond to all applications within one week.
-                    </p>
-                  </div>
-                  <div className="absolute left-0 md:left-1/2 w-8 h-8 bg-purple-600 rounded-full border-4 border-gray-900 transform -translate-x-3.5 md:-translate-x-4 flex items-center justify-center">
-                    1
-                  </div>
-                  <div className="flex-1 md:pl-12 md:mt-0 mt-4"></div>
+              {/* Step 2 */}
+              <div className="relative flex flex-col md:flex-row items-start">
+                <div className="flex-1 md:text-right md:pr-12 hidden md:block"></div>
+                {/* Circle indicator - Responsive positioning */}
+                <div className="absolute left-4 top-0 md:left-1/2 md:top-0 w-8 h-8 bg-purple-600 rounded-full border-4 border-gray-900 transform md:-translate-x-1/2 flex items-center justify-center">
+                  2
                 </div>
-                
-                {/* Step 2 */}
-                <div className="relative flex flex-col md:flex-row items-start">
-                  <div className="flex-1 md:text-right md:pr-12 md:block hidden"></div>
-                  <div className="absolute left-0 md:left-1/2 w-8 h-8 bg-purple-600 rounded-full border-4 border-gray-900 transform -translate-x-3.5 md:-translate-x-4 flex items-center justify-center">
-                    2
-                  </div>
-                  <div className="flex-1 md:pl-12 md:mt-0 mt-4">
-                    <h3 className="text-xl font-bold mb-2">Initial Interview</h3>
-                    <p className="text-gray-300">
-                      A casual 30-45 minute video call with a team member to discuss your experience, 
-                      our company culture, and answer any questions you might have.
-                    </p>
-                  </div>
+                <div className="flex-1 md:pl-12 pl-16">
+                  <h3 className="text-xl font-bold mb-2">Initial Interview</h3>
+                  <p className="text-gray-300">
+                    A casual 30-45 minute video call with a team member to discuss your experience, 
+                    our company culture, and answer any questions you might have.
+                  </p>
                 </div>
-                
-                {/* Step 3 */}
-                <div className="relative flex flex-col md:flex-row items-start">
-                  <div className="flex-1 md:text-right md:pr-12 pb-8 md:pb-0">
-                    <h3 className="text-xl font-bold mb-2">Skills Assessment</h3>
-                    <p className="text-gray-300">
-                      Depending on the role, we may ask you to complete a small project or skills assessment.
-                      We respect your time and design these to be completed within 3-4 hours.
-                    </p>
-                  </div>
-                  <div className="absolute left-0 md:left-1/2 w-8 h-8 bg-purple-600 rounded-full border-4 border-gray-900 transform -translate-x-3.5 md:-translate-x-4 flex items-center justify-center">
-                    3
-                  </div>
-                  <div className="flex-1 md:pl-12 md:mt-0 mt-4"></div>
+              </div>
+              
+              {/* Step 3 */}
+              <div className="relative flex flex-col md:flex-row items-start">
+                <div className="flex-1 md:text-right md:pr-12 pl-16 md:pl-0">
+                  <h3 className="text-xl font-bold mb-2">Skills Assessment</h3>
+                  <p className="text-gray-300">
+                    Depending on the role, we may ask you to complete a small project or skills assessment.
+                    We respect your time and design these to be completed within 3-4 hours.
+                  </p>
                 </div>
-                
-                {/* Step 4 */}
-                <div className="relative flex flex-col md:flex-row items-start">
-                  <div className="flex-1 md:text-right md:pr-12 md:block hidden"></div>
-                  <div className="absolute left-0 md:left-1/2 w-8 h-8 bg-purple-600 rounded-full border-4 border-gray-900 transform -translate-x-3.5 md:-translate-x-4 flex items-center justify-center">
-                    4
-                  </div>
-                  <div className="flex-1 md:pl-12 md:mt-0 mt-4">
-                    <h3 className="text-xl font-bold mb-2">Team Interview</h3>
-                    <p className="text-gray-300">
-                      Meet with 2-3 team members you'd be working with to discuss technical topics,
-                      collaboration, and to get a feel for the team dynamic.
-                    </p>
-                  </div>
+                {/* Circle indicator - Responsive positioning */}
+                <div className="absolute left-4 top-0 md:left-1/2 md:top-0 w-8 h-8 bg-purple-600 rounded-full border-4 border-gray-900 transform md:-translate-x-1/2 flex items-center justify-center">
+                  3
                 </div>
-                
-                {/* Step 5 */}
-                <div className="relative flex flex-col md:flex-row items-start">
-                  <div className="flex-1 md:text-right md:pr-12 pb-8 md:pb-0">
-                    <h3 className="text-xl font-bold mb-2">Offer & Onboarding</h3>
-                    <p className="text-gray-300">
-                      If there's a mutual fit, we'll extend an offer and work with you to ensure a smooth
-                      onboarding process into our team and culture.
-                    </p>
-                  </div>
-                  <div className="absolute left-0 md:left-1/2 w-8 h-8 bg-purple-600 rounded-full border-4 border-gray-900 transform -translate-x-3.5 md:-translate-x-4 flex items-center justify-center">
-                    5
-                  </div>
-                  <div className="flex-1 md:pl-12 md:mt-0 mt-4"></div>
+                <div className="flex-1 md:pl-12 hidden md:block"></div>
+              </div>
+              
+              {/* Step 4 */}
+              <div className="relative flex flex-col md:flex-row items-start">
+                <div className="flex-1 md:text-right md:pr-12 hidden md:block"></div>
+                {/* Circle indicator - Responsive positioning */}
+                <div className="absolute left-4 top-0 md:left-1/2 md:top-0 w-8 h-8 bg-purple-600 rounded-full border-4 border-gray-900 transform md:-translate-x-1/2 flex items-center justify-center">
+                  4
                 </div>
+                <div className="flex-1 md:pl-12 pl-16">
+                  <h3 className="text-xl font-bold mb-2">Team Interview</h3>
+                  <p className="text-gray-300">
+                    Meet with 2-3 team members you'd be working with to discuss technical topics,
+                    collaboration, and to get a feel for the team dynamic.
+                  </p>
+                </div>
+              </div>
+              
+              {/* Step 5 */}
+              <div className="relative flex flex-col md:flex-row items-start">
+                <div className="flex-1 md:text-right md:pr-12 pl-16 md:pl-0">
+                  <h3 className="text-xl font-bold mb-2">Offer & Onboarding</h3>
+                  <p className="text-gray-300">
+                    If there's a mutual fit, we'll extend an offer and work with you to ensure a smooth
+                    onboarding process into our team and culture.
+                  </p>
+                </div>
+                {/* Circle indicator - Responsive positioning */}
+                <div className="absolute left-4 top-0 md:left-1/2 md:top-0 w-8 h-8 bg-purple-600 rounded-full border-4 border-gray-900 transform md:-translate-x-1/2 flex items-center justify-center">
+                  5
+                </div>
+                <div className="flex-1 md:pl-12 hidden md:block"></div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+
 
       {/* Final CTA */}
       <section className="py-16 bg-gray-800">

@@ -345,7 +345,8 @@ const Services: FC = () => {
         </div>
       </section>
 
-      {/* Process Section */}
+
+      {/* Process Section with Improved Responsiveness */}
       <section className="py-16 bg-gray-800">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
@@ -357,31 +358,34 @@ const Services: FC = () => {
           
           <div className="max-w-4xl mx-auto">
             <div className="relative">
-              <div className="absolute left-0 md:left-1/2 h-full w-0.5 bg-purple-800 transform md:-translate-x-0.5"></div>
+              {/* Timeline Line - Responsive visibility and positioning */}
+              <div className="absolute md:left-1/2 left-4 h-full w-0.5 bg-purple-800 md:transform md:-translate-x-0.5"></div>
               
               <div className="space-y-12">
                 {/* Step 1 */}
                 <div className="relative flex flex-col md:flex-row items-start">
-                  <div className="flex-1 md:text-right md:pr-12 pb-8 md:pb-0">
+                  <div className="flex-1 md:text-right md:pr-12 pl-16 md:pl-0">
                     <h3 className="text-xl font-bold mb-2">Initial Consultation</h3>
                     <p className="text-gray-300">
                       We start by understanding your project needs, goals, and constraints to determine how 
                       we can best support your development process.
                     </p>
                   </div>
-                  <div className="absolute left-0 md:left-1/2 w-8 h-8 bg-purple-600 rounded-full border-4 border-gray-900 transform -translate-x-3.5 md:-translate-x-4 flex items-center justify-center">
+                  {/* Circle indicator - Responsive positioning */}
+                  <div className="absolute left-4 top-0 md:left-1/2 md:top-0 w-8 h-8 bg-purple-600 rounded-full border-4 border-gray-800 transform md:-translate-x-1/2 flex items-center justify-center">
                     1
                   </div>
-                  <div className="flex-1 md:pl-12 md:mt-0 mt-4"></div>
+                  <div className="flex-1 md:pl-12 hidden md:block"></div>
                 </div>
                 
                 {/* Step 2 */}
                 <div className="relative flex flex-col md:flex-row items-start">
-                  <div className="flex-1 md:text-right md:pr-12 md:block hidden"></div>
-                  <div className="absolute left-0 md:left-1/2 w-8 h-8 bg-purple-600 rounded-full border-4 border-gray-900 transform -translate-x-3.5 md:-translate-x-4 flex items-center justify-center">
+                  <div className="flex-1 md:text-right md:pr-12 hidden md:block"></div>
+                  {/* Circle indicator - Responsive positioning */}
+                  <div className="absolute left-4 top-0 md:left-1/2 md:top-0 w-8 h-8 bg-purple-600 rounded-full border-4 border-gray-800 transform md:-translate-x-1/2 flex items-center justify-center">
                     2
                   </div>
-                  <div className="flex-1 md:pl-12 md:mt-0 mt-4">
+                  <div className="flex-1 md:pl-12 pl-16">
                     <h3 className="text-xl font-bold mb-2">Scoping & Planning</h3>
                     <p className="text-gray-300">
                       We define the scope of work, create detailed specifications, and establish 
@@ -392,26 +396,28 @@ const Services: FC = () => {
                 
                 {/* Step 3 */}
                 <div className="relative flex flex-col md:flex-row items-start">
-                  <div className="flex-1 md:text-right md:pr-12 pb-8 md:pb-0">
+                  <div className="flex-1 md:text-right md:pr-12 pl-16 md:pl-0">
                     <h3 className="text-xl font-bold mb-2">Integration & Kickoff</h3>
                     <p className="text-gray-300">
                       Our team members integrate with your workflows, tools, and communication channels, 
                       ensuring a smooth collaboration from day one.
                     </p>
                   </div>
-                  <div className="absolute left-0 md:left-1/2 w-8 h-8 bg-purple-600 rounded-full border-4 border-gray-900 transform -translate-x-3.5 md:-translate-x-4 flex items-center justify-center">
+                  {/* Circle indicator - Responsive positioning */}
+                  <div className="absolute left-4 top-0 md:left-1/2 md:top-0 w-8 h-8 bg-purple-600 rounded-full border-4 border-gray-800 transform md:-translate-x-1/2 flex items-center justify-center">
                     3
                   </div>
-                  <div className="flex-1 md:pl-12 md:mt-0 mt-4"></div>
+                  <div className="flex-1 md:pl-12 hidden md:block"></div>
                 </div>
                 
                 {/* Step 4 */}
                 <div className="relative flex flex-col md:flex-row items-start">
-                  <div className="flex-1 md:text-right md:pr-12 md:block hidden"></div>
-                  <div className="absolute left-0 md:left-1/2 w-8 h-8 bg-purple-600 rounded-full border-4 border-gray-900 transform -translate-x-3.5 md:-translate-x-4 flex items-center justify-center">
+                  <div className="flex-1 md:text-right md:pr-12 hidden md:block"></div>
+                  {/* Circle indicator - Responsive positioning */}
+                  <div className="absolute left-4 top-0 md:left-1/2 md:top-0 w-8 h-8 bg-purple-600 rounded-full border-4 border-gray-800 transform md:-translate-x-1/2 flex items-center justify-center">
                     4
                   </div>
-                  <div className="flex-1 md:pl-12 md:mt-0 mt-4">
+                  <div className="flex-1 md:pl-12 pl-16">
                     <h3 className="text-xl font-bold mb-2">Development & Iteration</h3>
                     <p className="text-gray-300">
                       Regular builds, milestone deliveries, and constant communication ensure 
@@ -422,26 +428,28 @@ const Services: FC = () => {
                 
                 {/* Step 5 */}
                 <div className="relative flex flex-col md:flex-row items-start">
-                  <div className="flex-1 md:text-right md:pr-12 pb-8 md:pb-0">
+                  <div className="flex-1 md:text-right md:pr-12 pl-16 md:pl-0">
                     <h3 className="text-xl font-bold mb-2">QA & Refinement</h3>
                     <p className="text-gray-300">
                       Comprehensive quality assurance ensures deliverables meet your standards, 
                       with iterative refinement based on your feedback.
                     </p>
                   </div>
-                  <div className="absolute left-0 md:left-1/2 w-8 h-8 bg-purple-600 rounded-full border-4 border-gray-900 transform -translate-x-3.5 md:-translate-x-4 flex items-center justify-center">
+                  {/* Circle indicator - Responsive positioning */}
+                  <div className="absolute left-4 top-0 md:left-1/2 md:top-0 w-8 h-8 bg-purple-600 rounded-full border-4 border-gray-800 transform md:-translate-x-1/2 flex items-center justify-center">
                     5
                   </div>
-                  <div className="flex-1 md:pl-12 md:mt-0 mt-4"></div>
+                  <div className="flex-1 md:pl-12 hidden md:block"></div>
                 </div>
                 
                 {/* Step 6 */}
                 <div className="relative flex flex-col md:flex-row items-start">
-                  <div className="flex-1 md:text-right md:pr-12 md:block hidden"></div>
-                  <div className="absolute left-0 md:left-1/2 w-8 h-8 bg-purple-600 rounded-full border-4 border-gray-900 transform -translate-x-3.5 md:-translate-x-4 flex items-center justify-center">
+                  <div className="flex-1 md:text-right md:pr-12 hidden md:block"></div>
+                  {/* Circle indicator - Responsive positioning */}
+                  <div className="absolute left-4 top-0 md:left-1/2 md:top-0 w-8 h-8 bg-purple-600 rounded-full border-4 border-gray-800 transform md:-translate-x-1/2 flex items-center justify-center">
                     6
                   </div>
-                  <div className="flex-1 md:pl-12 md:mt-0 mt-4">
+                  <div className="flex-1 md:pl-12 pl-16">
                     <h3 className="text-xl font-bold mb-2">Delivery & Transition</h3>
                     <p className="text-gray-300">
                       Clean handover of deliverables with comprehensive documentation and knowledge 
