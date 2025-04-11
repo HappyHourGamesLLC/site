@@ -1,7 +1,9 @@
 // components/Footer.tsx
 import { FC, useState, FormEvent } from 'react';
 import Link from 'next/link';
-import {X, Mail, Heart, ArrowRight } from 'lucide-react';
+import { X, Mail, Heart, ArrowRight } from 'lucide-react';
+import { SiDiscord } from '@icons-pack/react-simple-icons';
+
 
 interface FooterLink {
   name: string;
@@ -35,9 +37,10 @@ const Footer: FC = () => {
   ];
 
   const socialLinks: SocialLink[] = [
-    { name: 'Twitter', icon: <X size={20} />, href: 'https://twitter.com/happyhourgames' },
+    //{ name: 'Twitter', icon: <X size={20} />, href: 'https://twitter.com/happyhourgames' },
     //{ name: 'Instagram', icon: <Instagram size={20} />, href: 'https://instagram.com/happyhourgames' },
     //{ name: 'LinkedIn', icon: <Linkedin size={20} />, href: 'https://linkedin.com/company/happyhourgames' },
+    { name: 'Discord', icon: <SiDiscord size={20} />, href: 'https://discord.gg/KAmAc5SuZC' },
     { name: 'Email', icon: <Mail size={20} />, href: 'mailto:hello@thehappyhour.games' }
   ];
 

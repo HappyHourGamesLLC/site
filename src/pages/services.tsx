@@ -506,10 +506,12 @@ const ServiceCard: FC<ServiceCardProps> = ({ service }) => {
         </ul>
       </div>
       
+      {/* 
       <Link href={`/contact?service=${service.id}`} className="btn-primary inline-flex items-center justify-center text-center">
         Contact Us
         <ArrowRight size={16} className="ml-2" />
       </Link>
+      */}
     </div>
   );
 };
