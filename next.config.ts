@@ -4,7 +4,10 @@ import createMDX from '@next/mdx'
 const nextConfig: NextConfig = {
   /* config options here */
   pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
-  output: 'standalone'
+  images: {
+    unoptimized: true,
+  },
+  output: 'export'
 };
 
 const withMDX = createMDX({
