@@ -27,14 +27,13 @@
 This is very much an early version of our site, and we wanted to be transparent about what's still in the works. Here's what you can expect in upcoming updates:
 
 
-
 ## Coming Soon (In Order)
 - **Official Logo Reveal** - Our design team is putting the finishing touches on our official logo  
 - **Community Features** - Improvements will be made to discord to further Community enagagement.
 - **Development Blog** - Regular updates and behind-the-scenes content  
-- **Team Profiles** - Get to know the individuals behind Happy Hour Games  
 - **Expanded Game Showcases** - Detailed pages about our current projects with additional screenshots  
 
+The site might have some bugs as its still a very early version and we will expand on it with even more features as the studio itself expands.
 
 ## Our No-Crunch Commitment
 

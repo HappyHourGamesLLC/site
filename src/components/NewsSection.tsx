@@ -17,30 +17,7 @@ const NewsSection: FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
 
   const newsItems: NewsItem[] = [
-    {
-      date: "April 2, 2025",
-      title: "Project Victorian Enters Prototype Phase",
-      excerpt: "We're excited to announce that our flagship title Project Victorian has entered its prototype phase...",
-      slug: "project-victorian-prototype-phase",
-      imageUrl: "/images/news/prototype-phase.jpg",
-      tags: ["Development", "Project Victorian"]
-    },
-    {
-      date: "March 15, 2025",
-      title: "Happy Hour Games Secures Seed Funding",
-      excerpt: "Happy Hour Games has successfully secured seed funding to support the development of our first title...",
-      slug: "seed-funding-announcement",
-      imageUrl: "/images/news/funding.jpg",
-      tags: ["Company", "Funding"]
-    },
-    {
-      date: "February 28, 2025",
-      title: "Introducing Our Development Philosophy",
-      excerpt: "At Happy Hour Games, we believe in sustainable development practices. Here's how we're building games differently...",
-      slug: "development-philosophy",
-      imageUrl: "/images/news/philosophy.jpg",
-      tags: ["Culture", "Development"]
-    }
+
   ];
 
   useEffect(() => {

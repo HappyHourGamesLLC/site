@@ -21,10 +21,10 @@ const Footer: FC = () => {
 
   const quickLinks: FooterLink[] = [
     { name: 'Home', href: '/' },
+    { name: 'News', href: '/news' },
     { name: 'About', href: '/about' },
     { name: 'Services', href: '/services' }
-    //{ name: 'Games', href: '/games' },
-    //{ name: 'News', href: '/news' }
+    //{ name: 'Games', href: '/games' }
   ];
 
   const infoLinks: FooterLink[] = [

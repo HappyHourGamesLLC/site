@@ -19,6 +19,7 @@ const Navbar: React.FC = () => {
     { name: 'Home', href: '/' },
     //{ name: 'Games', href: '/games' },
     //{ name: 'Investors', href: '/investors' },
+    { name: 'News', href: '/news' },
     { name: 'About', href: '/about' },
     { name: 'Services', href: '/services' },
     { name: 'Careers', href: '/careers' },

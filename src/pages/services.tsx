@@ -238,7 +238,6 @@ const Services: FC = () => {
           <div className="w-full h-full bg-gradient-to-b from-transparent to-gray-900 absolute z-10"></div>
           <div 
             className="w-full h-full bg-cover bg-center" 
-            style={{ backgroundImage: "url('/images/services-hero.jpg')" }}
           ></div>
         </div>
         <div className="relative z-10 container mx-auto px-6">
