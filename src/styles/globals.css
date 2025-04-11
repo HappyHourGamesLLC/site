@@ -1,0 +1,105 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #a855f7; /* Purple 500 */
+  --color-primary-dark: #9333ea; /* Purple 600 */
+  --color-secondary: #1f2937; /* Gray 800 */
+  --color-secondary-dark: #111827; /* Gray 900 */
+}
+
+body {
+  @apply bg-gray-900 text-white font-sans;
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-block px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg transition-colors duration-300;
+  }
+  
+  .btn-secondary {
+    @apply inline-block px-6 py-3 bg-gray-800 hover:bg-gray-700 text-white font-semibold rounded-lg border border-purple-600 transition-colors duration-300;
+  }
+  
+  .nav-link {
+    @apply text-gray-300 hover:text-purple-400 transition-colors duration-300;
+  }
+  
+  .mobile-nav-link {
+    @apply text-gray-300 hover:text-purple-400 transition-colors duration-300 block py-2;
+  }
+}
+
+/* Victorian/Gothic Theme Elements */
+.gothic-border {
+  @apply border-2 border-purple-800 rounded-lg;
+}
+
+.gothic-heading {
+  @apply font-serif;
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes floatUp {
+  0% { transform: translateY(20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+.animate-floatUp {
+  animation: floatUp 0.8s ease-out;
+}
+
+
+ /* everything below has to do with markdown */
+.prose a {
+  @apply text-purple-400 hover:text-purple-300 transition-colors;
+}
+
+.prose h1, .prose h2, .prose h3, .prose h4 {
+  @apply text-white font-bold mb-4;
+}
+
+.prose h1 {
+  @apply text-3xl;
+}
+
+.prose h2 {
+  @apply text-2xl;
+}
+
+.prose h3 {
+  @apply text-xl;
+}
+
+.prose ul, .prose ol {
+  @apply my-6;
+}
+
+.prose li {
+  @apply mb-2;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-purple-400 pl-4 italic;
+}
+
+.prose code {
+  @apply bg-gray-800 px-1 py-0.5 rounded text-purple-300;
+}
+
+.prose pre {
+  @apply bg-gray-800 p-4 rounded-lg overflow-x-auto;
+}
