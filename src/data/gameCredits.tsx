@@ -38,11 +38,20 @@ export const gameCredits: GameCredit[] = [
     link: "https://www.youtube.com/watch?v=OgnRXTUYyuo"
   },
   {
-    title: "The Witcher IP",
+    title: "Vail VR",
+    studio: "AEXLAB",
+    year: "2024",
+    imageUrl: "/images/games/vailvr.jpg",
+    description: "The highest rated virtual reality shooter featuring best-in-class mechanics, precisely tuned interactions, and immersive physics systems. This premium VR combat experience sets the standard for tactical gunplay and movement in virtual environments",
+    teamMembers: ["Haczar Criollo"],
+    link: "https://www.youtube.com/watch?v=O0THl-8tmPQ"
+  },
+  {
+    title: "Witcher Project Sirus",
     studio: "CD Projekt Red",
     year: "2023-2024",
     imageUrl: "/images/games/witcher.webp",
-    description: "An award-winning open-world RPG following monster hunter Geralt of Rivia. Known for its rich storytelling, complex characters, and beautifully realized fantasy world filled with meaningful player choices.",
+    description: "A spin-off adventure in the Witcher universe with multiplayer elements and unique storytelling approach. Developed by The Molasses Flood under CD Projekt Red's guidance, Project Sirius blends the dark fantasy world of The Witcher with innovative gameplay mechanics.",
     teamMembers: ["Alex Batista"],
     link: ""
   }

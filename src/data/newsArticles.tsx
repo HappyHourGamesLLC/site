@@ -16,7 +16,7 @@
     {
       id: "website-launch",
       title: "Welcome to Our New Website - Early Version Launch",
-      date: "April 10, 2025",
+      date: "February 20, 2025",
       readTime: "3 min read",
       excerpt: "We're excited to launch the early version of our new website. Here's what's coming in future updates.",
       tags: ["Announcement", "Website"],
