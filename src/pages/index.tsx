@@ -58,9 +58,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Game Credits Carousel */}
-      <GameCreditsCarousel games={gameCredits} />
-
       {/* Services Offered */}
       <ServicesGrid />
 
