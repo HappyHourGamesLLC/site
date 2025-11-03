@@ -1,48 +1,49 @@
-import { dirname } from "path";
-import { fileURLToPath } from "url";
-import { FlatCompat } from "@eslint/eslintrc";
+// eslint.config.mjs
+import globals from "globals";
+import pluginJs from "@eslint/js";
+import tseslint from "typescript-eslint";
+import nextPlugin from "@next/eslint-plugin-next";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-});
-
-const eslintConfig = [
-  ...compat.extends("next/core-web-vitals", "next/typescript"),
+export default [
   {
+    // Global ignores (similar to .eslintignore)
+    ignores: [".next/", "node_modules/", "out/"],
+  },
+  pluginJs.configs.recommended, // Basic JS recommended rules
+  ...tseslint.configs.recommended, // TypeScript recommended rules
+  {
+    // Next.js specific configurations
+    files: ["**/*.{js,jsx,ts,tsx}"],
+    plugins: {
+      "@next/next": nextPlugin,
+    },
     rules: {
-      // Allow unescaped apostrophes with specific exceptions
+      ...nextPlugin.configs.recommended.rules,
+      ...nextPlugin.configs["core-web-vitals"].rules,
+      // Your custom rules
       'react/no-unescaped-entities': ['error', {
         forbid: ['>', '}']
       }],
-      
-      // Configure unused vars to be more lenient
       '@typescript-eslint/no-unused-vars': ['warn', {
         args: 'after-used',
         argsIgnorePattern: '^_',
         varsIgnorePattern: '^_',
-        destructuredArrayIgnorePattern: '^_'
+        destructuredArrayIgnorePattern: '^_',
       }],
-      
-      // Handle React Hook warnings more gracefully
       'react-hooks/exhaustive-deps': ['warn', {
-        additionalHooks: '(useEffect|useLayoutEffect|useInsertionEffect)'
+        additionalHooks: '(useEffect|useLayoutEffect|useInsertionEffect)',
       }],
-      
-      // Optional: additional customizations
       'prefer-const': 'warn',
-      'no-unused-expressions': 'warn'
+      'no-unused-expressions': 'warn',
     },
-    
-    // Optional: add some parser options
     languageOptions: {
       parserOptions: {
-        project: './tsconfig.json'
-      }
-    }
-  }
+        project: './tsconfig.json',
+      },
+      globals: {
+        ...globals.browser,
+        ...globals.node,
+      },
+    },
+  },
 ];
-
-export default eslintConfig;
